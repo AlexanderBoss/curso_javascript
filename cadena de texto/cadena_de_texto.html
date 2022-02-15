@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+    //cadena de texto
+    let nombre = "Alexander Antony";
+    let apellido = "Papuico Miranda";
+    let saludo = new String("Hola Mundo");
+    let lorem =
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempora.";
+    console.log(nombre, apellido, saludo);
+    //cantidad de caracteres
+    console.log(nombre.length, apellido.length, saludo.length);
+    //caracteres en mayuscula y minuiscula
+    console.log(nombre.toUpperCase(), apellido.toLowerCase());
+    //buscar palabras si es verdadero es true false si no encuentra
+    console.log(lorem.includes("elit"))
+    console.log(lorem.includes("alex"))
+    //quita espacios en blanco del inicio y el final
+    console.log(lorem.trim())
+    //genera un arreglo a partir de comillas o comas 
+    console.log(lorem.split(","))
+  </script>
+
+  <body></body>
+</html>

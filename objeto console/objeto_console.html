@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Javascript</title>
+</head>
+<body>
+    <h1>Fundamentos de Javascript</h1>
+    <script>
+        console.log(console);
+        console.error("Esto es un error");
+        console.warn("Esto es un aviso");
+        console.info(`Esta función del navegador 
+                        está pensada para desarrolladores. 
+                        Si alguien te ha indicado que copiaras 
+                        y pegaras algo aquí para habilitar una función de
+                        Facebook o para "hackear" la cuenta de alguien, 
+                        se trata de un fraude. Si lo haces, esta persona 
+                        podrá acceder a tu cuenta.`)
+        console.log("Un registro de lo que ha pasado en nuestra aplicacion")
+
+    var nombre="Alexander"
+    apellido="Papuico"
+    edad=24
+    console.log(nombre)
+    console.log(apellido)
+    console.log(edad)
+    console.log(nombre,apellido,edad)
+    console.log(`Hola mi nombre es ${nombre} ${apellido} tengo ${edad} años`)
+
+    //COMODINES
+    //  %s letras   %d numeros
+    console.log(`Hola mi nombre es %s  %s tengo  %d años`,nombre,apellido,edad)
+
+    console.clear()
+    console.log(window)
+    console.log(document)
+    //Mostrar todas las propiedades metodos del window
+    console.dir(window)
+    //Mostrar todas las propiedades y metodos del docuemnto HTML
+    console.dir(document)
+    console.clear()
+
+    console.group("Cursos de @jonMircha en YouTube")
+    console.log("Curso de Javascript")
+    console.log("Curso de Node.js")
+    console.log("Curso de PWAs")
+    console.log("Curso de Flexbox")
+    console.log("Curso de Diseño y programacion Web")
+    console.groupEnd()
+
+    console.groupCollapsed("Cursos de @jonMircha en YouTube");
+    console.log("Curso de Javascript");
+    console.log("Curso de Node.js");
+    console.log("Curso de PWAs");
+    console.log("Curso de Flexbox");
+    console.log("Curso de Diseño y programacion Web");
+    console.groupEnd();
+    console.clear();
+
+    console.log(console)
+    console.table(Object.entries(console).sort())
+
+
+    var numeros =[1,2,3,4,5]
+    var vocales=["a","b","c","d","e"]
+    var perro={
+        nombre:"Rafael",
+        raza:"Milton",
+        color:"puerta"
+    }
+    console.table(numeros)
+    console.table(vocales)
+    console.table(perro)
+    console.clear()
+
+    console.time("cuanto tiempo tarda mi codigo")
+    var arreglo=Array(1000000);
+    for(let i=0;i<arreglo.length;i++){
+        arreglo[i]=i;
+
+    }
+    console.timeEnd("cuanto tiempo tarda mi codigo")
+    //console.log(arreglo)
+    console.clear()
+
+    for(let i=0;i<100;i++){
+        console.count("codigo for") //cuantas veces se ejecuta
+        console.log(i)
+    }
+    console.clear()
+
+    //ASSERT se ejecuta para hacer pruebas
+    var x=1
+    var y=2
+    var pruebaXY="Se espera que x sea menor que y"
+
+    console.assert(x<y,{x,y,pruebaXY});
+
+
+
+    </script>
+</body>
+</html>

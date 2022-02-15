@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        CORTOCIRCUITO OR - Cuando el valor de la izquierda en la expresiopn
+        siempre pueda validar a true es el valor que se cargara por defecto
+
+        CORTOCIRCUITO AND - Cuando el valor de la izquierda en la expresion
+        siempre pueda el validar a false es el valor que se cargara por defecto
+
+        */
+
+        function saludar(nombre){
+            nombre=nombre||"Desconocido"
+            console.log(`hola ${nombre}`);
+
+
+        }
+
+        saludar("Jon")
+        saludar()
+                    //verdadero  ||  falso
+        console.log("Cadena"||"Valor de la cadena")
+        console.log(19||"Valor de la derecha")
+        console.log([]||"Valor de la derecha")
+        console.log({}||"Valor de la derecha")
+        console.log(true||"Valor de la derecha")
+        console.log(false||"Valor de la derecha")
+        console.log(null||"Valor de la derecha")
+        console.log(undefined||"Valor de la derecha")
+        console.log(-2||"Valor de la derecha")
+        console.log(0||"Valor de la derecha")
+        console.log("PARA LOS AND")
+        console.log("Cadena"&&"Valor de la cadena")
+        console.log(19&&"Valor de la derecha")
+        console.log([]&&"Valor de la derecha")
+        console.log({}&&"Valor de la derecha")
+        console.log(true&&"Valor de la derecha")
+        console.log(false&&"Valor de la derecha")
+        console.log(null&&"Valor de la derecha")
+        console.log(undefined&&"Valor de la derecha")
+        console.log(-2&&"Valor de la derecha")
+        console.log(0&&"Valor de la derecha")
+
+
+
+
+    </script>
+    
+</body>
+</html>

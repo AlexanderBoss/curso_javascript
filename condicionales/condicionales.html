@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>    
+
+        /*if else*/
+
+        var edad=17
+
+        if(edad>=18){
+            console.log("Eres mayor de edad")
+        }else{
+            console.log("Eres menor de edad")
+        }
+
+        /*if-else  else-if  */
+        /* 
+        Dejame dormir    0-5
+        Buenos dias      6-11
+        Buenas tardes   12-18 
+        Buenas noches   19-23 
+        */
+
+        var hora=12;
+        console.log(`son las ${hora} horas`)
+        if (hora>=0 && hora<=5){
+            console.log("Dejame dormir")
+        }else if(hora>=6 && hora<=11){
+            console.log("Buenos dias")
+        }else if(hora>=12 && hora<=18){
+            console.log("Buenos tardes")
+        }else{
+            console.log("Buenos noches")    
+        }
+
+        /* Operador ternario*/
+        //(Condicion) ? verdadero :falsa
+
+        console.log("operador ternario")
+
+        var eresMayor=(edad>=18)
+        ?"Eres mayor de edad":
+        "Eres menor de edad"
+        console.log(eresMayor)
+
+
+        /*switch-case*/
+        /*
+        Domingo     0
+        Lunes       1   
+        Martes      2
+        Miercoles   3
+        Jueves      4
+        Viernes     5
+        Sabado      6
+        */
+        var dia=2;
+        switch(dia){
+            case 0:
+            console.log("Domingo")
+            break;
+            case 1:
+            console.log("Lunes")
+            break;
+            case 2:
+            console.log("Martes")
+            break;
+            case 3:
+            console.log("Miercoles")
+            break;
+            case 4:
+            console.log("Jueves")
+            break;
+            case 5:
+            console.log("Viernes")
+            break;
+            case 6:
+            console.log("Sabado")
+            break;
+            default:
+            console.log("El dia no exite")
+            break;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>    
+        var numeros= [1,2,3];
+
+
+
+        //sin destructuracion
+        var uno=numeros[0];
+        var dos=numeros[1];
+        var tres=numeros[2];
+        console.log(uno,dos,tres)
+        
+        //con destructuracion
+        var [one,two,three]=numeros
+        console.log(one,two,three)
+        
+
+        var persona={
+            nombre:"Alexander",
+            apellido:"Papuico",
+            edad:24,
+        }
+
+        var{nombre,apellido,edad}=persona;
+
+        console.log(nombre,apellido,edad)
+
+    </script>
+</body>
+</html>

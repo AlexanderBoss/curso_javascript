@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        var contador=0
+        while(contador<10){
+            console.log(`while ${contador}`)
+            contador ++;
+        }
+        console.log(`ahora la varaible vale ${contador}`)
+
+
+        do{
+            console.log(`do while ${contador}`)
+            contador++;
+        }while(contador<10); //condicion para que se ejecute el do
+
+
+        /*FOR */ 
+        /*
+        for(inicializaion de la variable ; condicion ; decremento o incremento)
+            sentecnias que ejecuta el for
+        */ 
+        for(let i=0;i<=10;i++){
+            console.log(i)
+        }
+
+        var numeros =[10,20,30,40,50,60,70,80,90];
+        for(let i =0 ; i<numeros.length;i++){
+                console.log(numeros[i])
+        } 
+        
+        
+
+        //FOR IN        la variante del ciclo for
+        const alex={   
+            nombre:"Alexander",
+            apellido:"Papuico",
+            edad:24
+        }
+
+        for(const propiedad in alex){
+            console.log(`Key : ${propiedad} ,values:${alex[propiedad]}`)
+
+        }
+
+
+        //FOR OF   es mayormente para arreglos
+
+        for(const elementos of numeros){
+
+            console.log(elementos);
+        }
+
+        var cadena="HOLA MUNDO"
+        
+        for(const caracter of cadena){
+
+            console.log(caracter);
+        }
+
+
+    </script>
+  </body>
+</html>

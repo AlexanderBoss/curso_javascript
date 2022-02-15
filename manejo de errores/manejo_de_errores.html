@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        try{
+            console.log("En el try se agrega el codigo a evaluar")
+            noExiste;
+            console.log(`en el segundo mensaje en el try`)
+        }catch(error){
+            console.log(`Catch Captura cualquier error surgido o lanzado
+                        en el try`)
+                        console.log(error)
+        }finally{
+            console.log(`El bloque finally se ejecutara siempre al 
+                        final de un bloque try-catch`)
+        }
+
+
+
+        try{
+            var numero=y
+            if(isNaN(numero)){
+                throw new Error(`El valor no es un numero`)
+            }
+             
+            console.log(numero*numero)
+
+
+        }catch(error){
+            console.log(`Se produjo el siguiente error ${error}`)
+        }
+    </script>
+</body>
+</html>

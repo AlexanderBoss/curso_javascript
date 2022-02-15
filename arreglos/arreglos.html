@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const a = [];
+      const b = [1, true, "Hola", ["A", "B", "C", [1, 2, 3]]];
+      console.log(a);
+      console.log(b);
+      console.log(b.length);
+      console.log(b[2]);
+      console.log(b[3][2]);
+      console.log(b[3][3][2]);
+
+      //lena elementos
+      const c = Array.of("X", "Y", 9, 8, 7);
+      console.log(c);
+
+      const d = Array(100).fill(false);
+      console.log(d);
+
+
+      //formas antiguas
+      const e =new Array();
+      console.log(e);
+
+      const f=new Array(1,2,3,true,false)
+      console.log(f);
+
+
+     //agregar al final del arreglo   
+      const colores=["rojo","verde","azul"];
+      console.log(colores);
+     //se utiliza el metodo push para agregar al ultimo elemento
+      colores.push("negro");
+      console.log(colores);
+      //se tuuliza el metodo pop para quitar el ultimo elemento
+      colores.pop();
+      console.log(colores);
+
+      // metodo foreach
+      colores.forEach(function(el,index){
+      console.log(`<li id="${index}">${el}</li>`);
+      });
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let a=new String("hola")
+        //console.log(a);
+
+        const b = {}
+        console.log(b)
+
+        const c=new Object()
+        console.log(c)
+        
+        /*
+        dentro de un objeto a las variabkles 
+        se le van a llamar atributos/propiedades
+        y a las funciones se les llama metodos 
+        */ 
+        const alex={
+            nombre:"Alexander",
+            apellido:"Papuico",
+            edad:24,
+            pasatiempos:["Correr","Hacer ejercicios","Hacer deportes"],
+            soltero:false,
+            contacto:{
+                email:"2017110129@untels.edu.pe",
+                twitter:"@2017110129",
+                movil:993610777
+            },
+            saludar:function(){
+                console.log(`Buenos dias :`)
+            },
+            decirMiNombre(){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido}  tengo ${this.edad}
+                            años me puedes seguir en mi twitter ${this.contacto.twitter}`)
+            },
+        }
+        console.log(alex)
+        console.log(alex["nombre"])
+        console.log(alex["apellido"])
+        console.log(alex.edad)
+        alex.saludar();
+        alex.decirMiNombre();
+
+        //permite listar todas las llaves del objeto
+        console.log(Object.keys(alex))
+        //forma un arreglo me muestra los valores del objeto
+        console.log(Object.values(alex))
+
+        //evalua si se encuentra en nnuestro obejto las llaves
+        console.log(alex.hasOwnProperty("nombre"))
+        console.log(alex.hasOwnProperty("nacimiento"))
+
+    </script>
+
+</body>
+</html>

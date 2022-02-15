@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    Nos sirve para almacenas objetos a una coleccion de datos
+</head>
+<body>
+    <script>
+        var mapa=new Map();
+        mapa.set("nombre","Alexander")
+        mapa.set("apellido","Papuico","Miranda")
+        mapa.set("edad",25)
+
+        console.log(mapa)
+        //cantidad
+        console.log(mapa.size)
+
+        //tenemos el valor de nombre?
+        console.log(mapa.has("nombre"));
+        //obtener el valor de  nombre
+        console.log(mapa.get("nombre"));
+        //agregamos a nuestra variable nombre
+        mapa.set("nombre","Alexander Papuico Miranda") 
+        console.log(mapa.get("nombre"))  
+        //borramos nuestro variable apellido  
+        mapa.delete("apellido")   
+
+        mapa.set(19,"diecinueve")
+        mapa.set(false,"false")
+        mapa.set({},{})
+     
+        console.log(mapa)
+
+        for(var [key,value] of mapa){
+            console.log(`LLave: ${key}, Valor: ${value}`);
+        }
+
+        const mapa2= new Map([
+            ["nombre","Alexander"],
+            ["edad",24],
+            ["animal","perro"]
+        ]);
+        console.log(mapa2)
+
+        var a={ value :'123',
+        
+                  text: 'ceviche'};
+
+       
+    </script>    
+</body>
+</html>

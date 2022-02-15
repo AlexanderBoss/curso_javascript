@@ -1,0 +1,15 @@
+{
+    "candena":"Alexander",
+    "numero":"35",
+    "booleano":"true",
+    "arreglo":["correr","programar","cocinar"],
+    "objeto":{
+        "twiter": "alexander@ghmail.com",
+        "email":"alexanderpmiranda1996@gmail.com"
+
+    },
+    "nulo":null
+
+    
+
+}

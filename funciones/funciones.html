@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Declaracion de funcion
+
+      //funcion declarada una funcion es un bloque de linea de codigo
+      function estoEsUnaFuncion() {
+        console.log("Uno");
+        console.log("Dos");
+        console.log("Tres");
+      }
+
+      function unaFuncionQueDevuelveValor() {
+        console.log("Uno");
+        return `alt + 96 comilla inversa`;
+        console.log("Dos");
+        console.log("Tres");
+        return "La funcion ha retornado una cadena de texto";
+      }
+      //invocacion de funcion
+      /*estoEsUnaFuncion();
+        estoEsUnaFuncion();
+        */
+      //let valorDeFuncion = unaFuncionQueDevuelveValor();
+      //console.log(valorDeFuncion)
+
+      function saludar(nombre = "Desconocido", edad = 00) {
+        console.log(
+          `Hola mi nombre es ${nombre} tengo la edad de ${edad} años`
+        );
+      }
+      saludar("Alexander", 24);
+      saludar();
+
+      //funcion declarada vs funcion expresada
+      funcionDeclarada();
+      
+      function funcionDeclarada() {
+        console.log(`esto es una funcion declarada puede 
+        invocarse en cualquier parte de nuestro 
+        codigo incluso antes que la funcion sea declarada`);
+      }
+      funcionDeclarada();
+
+      //funcion anonima
+      const funcionExpresada = function () {
+        console.log(`esto es una funcion expresada es decir una funcion que se
+            a asignado a una variable,si invocamos esta funcion antes de su deficinion JS nos dira
+            Cannot access 'funcionExpresada' before initialization`);
+      };
+      funcionExpresada();
+
+
+    </script>
+  </body>
+</html>

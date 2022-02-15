@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const saludar =nombre=>console.log(`hola ${nombre}`)
+        saludar("Alexander");
+
+
+        var sumar = function(a,b){ return a+b}
+        console.log(sumar(4,5))
+
+        var sumar2 =(a,b)=> a+b
+        console.log(sumar2(4,9))
+
+        var numeros =[1,2,3,4]
+
+        numeros.forEach(function(el,index){
+
+            console.log(`el elemento ${el} esta en la posicion ${index}`)
+        });
+
+        numeros.forEach((el,index) => console.log(`el elemento ${el} esta en la posicion ${index}`))
+        
+        function Perro(){
+            console.log(this);
+        }
+        console.log(Perro)
+
+        var Perro={
+            nombre:"pulgoso",
+            ladrar:function(){
+                console.log(this)
+            }
+        }
+        Perro.ladrar()
+    </script>
+
+    
+</body>
+</html>
